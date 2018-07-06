@@ -39,3 +39,6 @@ Glide、OKHttp、Banner、PhotoView、CircleImageView、LeakCanary、GSYVideoPla
 ![img](https://github.com/yanhao3214/Eden/blob/master/%E5%BD%92%E5%B1%9E%E5%9C%B0%E6%9F%A5%E8%AF%A2%E5%8A%A8%E5%9B%BE.gif) 
 ### 五、写在最后：
 这是我第一个完整的项目经历、覆盖了App开发常用的大部分功能。软件开发的整个流程都是我一个人负责，参考了很多书籍、付费课程和技术文章、咨询了一些专业的朋友、也使用了一些网络接口，感谢以上所有给我提供的帮助。整个过程记录了我成长的点点滴滴，充实而又快乐。</br>最后声明：本项目各大App商城免费下载，非商业用途（再次感谢Gank、聚合数据、慕课网和开眼视频等提供的数据接口！）
+###### 任何问题、欢迎交流
+邮箱：yanhaonuaa@163.com</br>
+微信：Iverson3214
