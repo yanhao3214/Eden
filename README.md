@@ -7,7 +7,16 @@
 ##### 主页包含7大模块：学习园地、娱乐视频、智能聊天、微信精选、慕课教程、美图欣赏、个人中心
 ##### 侧滑栏包含3个工具：天气预报、快递速查、归属地查询
 ##### 后续版本功能：自定义模块、智能推荐、翻译小助手、每日一笑、小闹钟、夜间模式、社交功能
-### 三、使用截图：
+### 三、技术要点：
+##### 1.框架与接口
+Glide、OKHttp、Banner、PhotoView、CircleImageView、LeakCanary、GSYVideoPlayer、Titanic、UMeng、Bugly、Bmob、聚合数据等
+##### 2.UI相关
+自定义View、动画、复杂控件：DrawerLayout、NavigationView、SwipeRefreshLayout、Spinner、ViewPager、TabLayout、FloatingActionBar、ScrollView、RecyclerView、StaggerLayoutManager、9-Patch等；
+##### 3.其它
+复杂列表开发、大图浏览、用户信息管理、消息传递、数据解析、工具类封装、多渠道打包等
+##### 4.设计模式
+单例、Builder、代理、工厂、外观、观察者。
+### 四、使用截图：
 ##### 1.学习园地
 ![img](https://github.com/yanhao3214/Eden/blob/master/%E5%AD%A6%E4%B9%A0%E5%9B%AD%E5%9C%B0.gif) 
 ##### 2.娱乐视频
@@ -28,14 +37,5 @@
 ![img](https://github.com/yanhao3214/Eden/blob/master/%E5%BF%AB%E9%80%92%E6%9F%A5%E8%AF%A2.gif) 
 ##### 10.归属地查询
 ![img](https://github.com/yanhao3214/Eden/blob/master/%E5%BD%92%E5%B1%9E%E5%9C%B0%E6%9F%A5%E8%AF%A2%E5%8A%A8%E5%9B%BE.gif) 
-### 四、技术要点：
-##### 1.框架与接口
-####### Glide、OKHttp、Banner、PhotoView、CircleImageView、LeakCanary、GSYVideoPlayer、Titanic、UMeng、Bugly、Bmob、聚合数据等
-##### 2.UI相关
-###### 自定义View、动画、复杂控件：DrawerLayout、NavigationView、SwipeRefreshLayout、Spinner、ViewPager、TabLayout、FloatingActionBar、ScrollView、RecyclerView、StaggerLayoutManager、9-Patch等；
-##### 3.其它
-###### 复杂列表开发、大图浏览、用户信息管理、消息传递、数据解析、工具类封装、多渠道打包等
-##### 3.设计模式
-###### 单例、Builder、代理、工厂、外观、观察者。
 ### 五、写在最后：
 这是我第一个完整的项目经历、覆盖了App开发常用的大部分功能。软件开发的整个流程都是我一个人负责，参考了很多书籍、付费课程和技术文章、咨询了一些专业的朋友、也使用了一些网络接口，感谢以上所有给我提供的帮助。整个过程记录了我成长的点点滴滴，充实而又快乐。</br>最后声明：本项目各大App商城免费下载，非商业用途（再次感谢Gank、聚合数据、慕课网和开眼视频等提供的数据接口！）
