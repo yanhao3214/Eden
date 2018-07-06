@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_logo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_joke_nav"
+        app:civ_border_color="@color/lightOrange"
+        app:civ_border_overlay="true"
+        app:civ_border_width="1dp" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/civ_logo"
+        android:layout_toEndOf="@id/civ_logo"
+        android:text="标题加载不出来哦"
+        android:textSize="15sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/tv_title"
+        android:layout_marginEnd="15dp"
+        android:text="价格"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/civ_logo"
+        android:layout_toEndOf="@id/civ_logo"
+        android:text="1天前"
+        android:textSize="13sp" />
+
+    <HorizontalScrollView
+        android:id="@+id/scroll_product_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_below="@+id/civ_logo"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="15dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/layout_scroll_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="5dp" />
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/tv_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scroll_product_horizontal"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp"
+        android:text="内容详情"
+        android:textSize="13sp" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/tv_footer"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/divider" />
+
+    <TextView
+        android:id="@+id/tv_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="12dp"
+        android:text="来自北京"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/iv_zan"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_toStartOf="@+id/tv_zan"
+        android:layout_alignBottom="@+id/tv_zan"
+        android:layout_marginEnd="3dp"
+        android:src="@drawable/ic_zan_normal"
+        android:scaleType="fitCenter"/>
+
+    <TextView
+        android:id="@+id/tv_zan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/divider"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="12dp"
+        android:text="333"
+        android:textSize="12sp" />
+</RelativeLayout>
+

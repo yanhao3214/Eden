@@ -1,0 +1,136 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    //Bmob
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        applicationId "com.gogo.haobutler"
+        minSdkVersion 18
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters 'armeabi', 'x86'
+        }
+        //替换友盟Channel Value
+        manifestPlaceholders = ["UMENG_CHANNEL_VALUE": "baidu"]
+    }
+
+    /**
+     * 生成签名文件
+     */
+    signingConfigs {
+        release {
+            storeFile file(KEY_PATH)
+            storePassword KEY_PASS
+            keyAlias ALIAS_NAME
+            keyPassword ALIAS_PASS
+        }
+    }
+
+    repositories {
+        flatDir(
+                dirs: 'libs'
+        )
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+
+    flavorDimensions "default"
+    productFlavors {
+
+        kuan {
+            dimension "default"
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "kuan"]
+        }
+
+        baidu {
+            dimension "default"
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "baidu"]
+        }
+        google {
+            dimension "default"
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "google"]
+        }
+        qihoo {
+            dimension "default"
+            manifestPlaceholders = [MENG_CHANNEL_VALUE: "qihoo"]
+        }
+
+        wandoujia {
+            dimension "default"
+            manifestPlaceholders = [MENG_CHANNEL_VALUE: "wandoujia"]
+        }
+
+        /**
+         * 遍历所有渠道，替换MENG_CHANNEL_VALUE为name
+         */
+        productFlavors.all {
+            flavor -> flavor.manifestPlaceholders = [MENG_CHANNEL_VALUE: name]
+        }
+    }
+
+
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+
+dependencies {
+    //依赖libs文件夹下所有jar文件
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //本地sdk module依赖
+    implementation project(':sdk')
+
+    /**
+     * 外部依赖
+     */
+    implementation('com.android.support:appcompat-v7:27.1.1') {
+        exclude module: 'support-v4'
+    }
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.tencent.bugly:crashreport:2.6.6.1'
+    implementation 'com.tencent.bugly:nativecrashreport:3.3.1'
+    implementation 'cn.bmob.android:bmob-sdk:3.5.5'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+    implementation('com.squareup.retrofit2:retrofit:2.4.0') {
+        exclude group: 'com.squareup.okhttp3'
+    }
+    implementation 'org.litepal.android:core:1.4.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    //json解析依赖
+    implementation 'com.alibaba:fastjson:1.2.47'
+    //内存泄漏检测依赖
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
+    //图片加载依赖
+    implementation 'com.github.bumptech.glide:glide:4.7.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
+    //视频播放依赖
+    implementation 'com.shuyu:GSYVideoPlayer:5.0.1'
+    //轮播图依赖
+    implementation 'com.youth.banner:banner:1.4.10'
+    //PhotoView依赖
+    implementation 'com.github.chrisbanes:PhotoView:2.1.4'
+    //Titanic依赖
+    implementation(name: 'titanic1.0.0', ext: 'aar')
+    //友盟统计依赖
+    implementation 'com.umeng.sdk:common:1.5.0'
+    implementation 'com.umeng.sdk:analytics:7.5.0'
+
+}

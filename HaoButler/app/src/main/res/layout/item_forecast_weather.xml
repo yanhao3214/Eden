@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="66dp"
+    android:weightSum="5"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="0dp"
+        android:layout_height="66dp"
+        android:layout_weight="2"
+        android:gravity="start|center_vertical"
+        android:text="2018-6-20"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_condition"
+        android:layout_width="0dp"
+        android:layout_height="66dp"
+        android:layout_weight="1"
+        android:gravity="start|center_vertical"
+        android:text="小雨"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_temp_max"
+        android:layout_width="0dp"
+        android:layout_height="66dp"
+        android:layout_weight="1"
+        android:gravity="start|center_vertical"
+        android:text="33°"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_temp_min"
+        android:layout_width="0dp"
+        android:layout_height="66dp"
+        android:layout_weight="1"
+        android:gravity="start|center_vertical"
+        android:text="33°"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+</LinearLayout>

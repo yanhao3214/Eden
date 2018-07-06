@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <com.youth.banner.Banner
+        android:id="@+id/banner_header"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+    <TextView
+        android:id="@+id/tv_hot"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/banner_header"
+        android:gravity="center"
+        android:text="@string/study_hot_header"
+        android:textColor="@color/lightOrange"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/layout_category"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_below="@+id/tv_hot"
+        android:orientation="horizontal"
+        android:paddingEnd="3dp"
+        android:paddingStart="3dp">
+
+        <ImageView
+            android:id="@+id/iv_middle_one"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitXY" />
+
+        <View
+            android:layout_width="7dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/iv_middle_two"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitXY" />
+
+        <View
+            android:layout_width="7dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/iv_middle_three"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitXY" />
+
+        <View
+            android:layout_width="7dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/iv_middle_four"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitXY" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_category"
+        android:orientation="vertical" />
+
+    <View
+        android:id="@+id/div_footer"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/layout_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="3dp"
+        android:background="@color/bgGrey" />
+</RelativeLayout>
+

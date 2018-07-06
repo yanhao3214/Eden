@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset_password"
+        android:textSize="21sp" />
+
+    <EditText
+        android:id="@+id/edt_reset_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_edit_selector"
+        android:hint="@string/user_email"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_by_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_button_selector"
+        android:text="@string/reset_by_email"
+        android:textColor="@android:color/white"
+        android:textSize="21sp" />
+
+</LinearLayout>

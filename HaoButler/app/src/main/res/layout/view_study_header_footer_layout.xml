@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_study_header_footer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="177个新课程"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_title"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginTop="8dp"
+        android:text="Android"
+        android:textSize="12sp" />
+
+
+    <RelativeLayout
+        android:id="@+id/layout_image_layer"
+        android:layout_width="140dp"
+        android:layout_height="120dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/tv_title"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="23dp">
+
+        <ImageView
+            android:id="@+id/iv_upper"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+        <ImageView
+            android:id="@+id/iv_lower"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/layout_image_layer"
+        android:layout_alignStart="@+id/tv_title"
+        android:text="讲师闫昊"
+        android:textColor="@color/lightBlue"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/tv_from"
+        android:layout_marginTop="15dp"
+        android:background="@color/bgGrey" />
+</RelativeLayout>
+

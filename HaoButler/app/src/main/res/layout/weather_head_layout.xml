@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <TextView
+        android:id="@+id/tv_title_loc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="21sp" />
+
+    <TextView
+        android:id="@+id/tv_title_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_title_loc"
+        android:layout_alignParentEnd="true"
+        android:textSize="16sp"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/tv_title_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title_loc"
+        android:layout_marginTop="12dp"
+        android:textColor="#ffffff"
+        android:textSize="80sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/iv_title_weather"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/tv_title_temp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="27dp"
+        android:layout_toEndOf="@+id/tv_title_temp"
+        android:src="@drawable/ic_cloudy_weather_white" />
+
+    <TextView
+        android:id="@+id/tv_title_condition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_title_temp"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/tv_title_temp"
+        android:textColor="#ffffff"
+        android:textSize="23sp" />
+
+    <ImageView
+        android:id="@+id/iv_wind_scale"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/tv_title_temp"
+        android:src="@drawable/ic_wind_weather_white" />
+
+    <TextView
+        android:id="@+id/tv_wind_scale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_wind_scale"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/iv_wind_scale"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/iv_humidity"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/tv_wind_scale"
+        android:layout_marginStart="30dp"
+        android:layout_toEndOf="@+id/tv_wind_scale"
+        android:src="@drawable/ic_humidity_weather_white" />
+
+    <TextView
+        android:id="@+id/tv_humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_wind_scale"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/iv_humidity"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/iv_pressure"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/iv_wind_scale"
+        android:layout_marginStart="30dp"
+        android:layout_toEndOf="@+id/tv_humidity"
+        android:src="@drawable/ic_pressure_weather_white" />
+
+    <TextView
+        android:id="@+id/tv_pressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_humidity"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/iv_pressure"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+</RelativeLayout>

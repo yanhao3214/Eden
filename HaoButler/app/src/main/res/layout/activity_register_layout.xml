@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:weightSum="3">
+
+    <EditText
+        android:id="@+id/edt_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_edit_selector"
+        android:hint="@string/tv_username_login"
+        android:maxLines="1"
+        android:textSize="19sp" />
+
+    <EditText
+        android:id="@+id/edt_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_edit_selector"
+        android:hint="@string/user_age"
+        android:inputType="number"
+        android:maxLines="1"
+        android:textSize="19sp" />
+
+    <EditText
+        android:id="@+id/edt_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_edit_selector"
+        android:hint="@string/user_description"
+        android:maxLines="2"
+        android:textSize="19sp" />
+
+    <RadioGroup
+        android:id="@+id/rg_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:paddingEnd="3dp"
+            android:paddingStart="3dp"
+            android:text="@string/user_male" />
+
+        <RadioButton
+            android:id="@+id/rb_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="23dp"
+            android:paddingEnd="3dp"
+            android:paddingStart="3dp"
+            android:text="@string/user_female" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_edit_selector"
+        android:hint="@string/tv_password_login"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/edt_password_again"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_edit_selector"
+        android:hint="@string/tv_password_again"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_edit_selector"
+        android:hint="@string/user_email"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/tv_email_verify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/email_verify"
+        android:textColor="@color/colorAccent" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_button_selector"
+        android:text="@string/btn_register"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+</LinearLayout>

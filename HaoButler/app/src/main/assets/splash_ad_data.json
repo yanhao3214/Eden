@@ -1,0 +1,55 @@
+{
+    "version": "3.0",
+    "values": [
+        {
+            "adid": "00001",
+            "resourceID": "00002",
+            "resource": "http://img02.tooopen.com/images/20160113/tooopen_sy_154284921633.jpg",
+            "clickUrl": "http://www.imooc.com/",
+            "clickMonitor": [
+                {
+                    "ver": "0",
+                    "url": "http://imooc.com/click??click=1"
+                },
+                {
+                    "ver": "0",
+                    "url": "http://imooc.com/click?click=2"
+                }
+            ],
+            "startMonitor": [
+                {
+                    "ver": "0",
+                    "url": "http://imooc.com/show?impression=1"
+                },
+                {
+                    "ver": "0",
+                    "url": "http: //imooc.com/show?impression=2"
+                }
+            ],
+            "middleMonitor": [
+                {
+                    "ver": "0",
+                    "url": "http://imooc.com/show?SU=1",
+                    "time": 5
+                },
+                {
+                    "ver": "0",
+                    "url": "http: //imooc.com/show?impression=2",
+                    "time": 5
+                }
+            ],
+            "endMonitor": [
+                {
+                    "ver": "0",
+                    "url": "http://imooc.com/show?end=1",
+                    "time": 5
+                },
+                {
+                    "ver": "0",
+                    "url": "http: //imooc.com/show?end=2",
+                    "time": 5
+                }
+            ]
+        }
+    ]
+}

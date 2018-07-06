@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleView">
+        <attr name="circle_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleTextView">
+        <attr name="circle_text" format="string" />
+        <attr name="text_size" format="float" />
+        <attr name="circle_yh_color" format="color" />
+        <attr name="text_color" format="color" />
+        <attr name="circle_defSize" format="integer" />
+    </declare-styleable>
+
+    <!-- 验证码自定义属性 -->
+    <declare-styleable name="CodeView">
+        <attr name="code_length" format="enum">
+            <enum name="RANDOM" value="0" />
+            <enum name="FOUR" value="4" />
+            <enum name="FIVE" value="5" />
+            <enum name="SIX" value="6" />
+        </attr>
+        <attr name="code_type" format="enum">
+            <enum name="mixed" value="0" />
+            <enum name="number" value="1" />
+            <enum name="letter" value="2" />
+            <enum name="Chinese" value="3" />
+        </attr>
+        <attr name="code_size" format="float" />
+        <attr name="lines" format="integer" />
+        <attr name="points" format="integer" />
+        <attr name="with_lines" format="boolean" />
+        <attr name="with_points" format="boolean" />
+        <attr name="with_frame" format="boolean" />
+        <attr name="frame_width" format="float" />
+        <attr name="frame_color" format="color" />
+        <attr name="frame_style" format="enum">
+            <enum name="raw" value="0" />
+            <enum name="dash" value="1" />
+            <enum name="double_raw" value="2" />
+            <enum name="double_dash" value="3" />
+            <enum name="raw_dash" value="4" />
+            <enum name="dash_raw" value="5" />
+        </attr>
+    </declare-styleable>
+</resources>

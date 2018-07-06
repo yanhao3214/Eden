@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yh="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.youth.banner.Banner
+            android:id="@+id/banner_test"
+            android:layout_width="match_parent"
+            android:layout_height="180dp">
+
+        </com.youth.banner.Banner>
+
+        <com.gogo.haobutler.custom.CircleView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/lightGrey"
+            android:padding="20dp"
+            yh:circle_color="@color/lightBlue" />
+
+        <com.gogo.haobutler.custom.CircleTextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            yh:circle_defSize="300"
+            yh:circle_text="哈哈哈"
+            yh:circle_yh_color="@color/lightOrange"
+            yh:text_color="@color/lightBlue"
+            yh:text_size="30" />
+
+        <Button
+            android:id="@+id/btn_random_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="random_test" />
+
+        <TextView
+            android:id="@+id/tv_random_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.gogo.haobutler.custom.CodeView
+            android:id="@+id/code_view"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            yh:code_length="RANDOM"
+            yh:code_size="100"
+            yh:code_type="mixed"
+            yh:frame_color="@color/lightOrange"
+            yh:frame_style="raw"
+            yh:frame_width="3"
+            yh:lines="66"
+            yh:points="1000"
+            yh:with_frame="true"
+            yh:with_lines="true"
+            yh:with_points="true" />
+
+        <Button
+            android:id="@+id/btn_send_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送通知" />
+
+        <Button
+            android:id="@+id/btn_alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="定时功能" />
+
+        <Button
+            android:id="@+id/btn_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="循环定时服务" />
+
+        <ImageView
+            android:id="@+id/iv_glide_test"
+            android:layout_width="250dp"
+            android:layout_height="120dp" />
+
+        <Button
+            android:id="@+id/btn_simple_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="简单视频播放" />
+
+        <Button
+            android:id="@+id/btn_list_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="列表视频播放" />
+    </LinearLayout>
+</ScrollView>

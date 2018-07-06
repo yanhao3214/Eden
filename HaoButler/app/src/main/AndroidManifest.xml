@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.gogo.haobutler">
+
+    <!-- Bugly 读取日志 -->
+    <uses-permission
+        android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" />
+    <!-- 允许联网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- wifi状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 获取sd卡写的权限-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许读取手机状态-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 友盟推荐 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <application
+        android:name=".application.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- 闪屏页 -->
+        <activity
+            android:name=".activity.SplashActivity"
+            android:theme="@style/FullScreenNoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 引导页 -->
+        <activity
+            android:name=".activity.GuideActivity"
+            android:theme="@style/FullScreenNoActionBar" />
+
+        <!-- 登录页 -->
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="@string/manifest_login" />
+
+        <!-- 主页 -->
+        <activity
+            android:name=".activity.MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        </activity>
+
+        <!-- 注册页 -->
+        <activity
+            android:name=".activity.RegisteredActivity"
+            android:label="@string/manifest_register" />
+
+        <!-- 忘记密码页 -->
+        <activity
+            android:name=".activity.ForgetPassActivity"
+            android:label="@string/manifest_forget_password" />
+
+        <!-- 设置页 -->
+        <activity
+            android:name=".activity.SettingActivity"
+            android:label="@string/manifest_setting" />
+
+        <!-- View测试页 -->
+        <activity android:name=".custom.ViewActivity"></activity>
+
+        <!-- 快递查询页 -->
+        <activity
+            android:name=".activity.DistributionActivity"
+            android:label="@string/manifest_courier" />
+
+        <!-- 归属地查询页 -->
+        <activity
+            android:name=".activity.AttributionActivity"
+            android:label="@string/manifest_attribution" />
+
+        <!-- 微信精选详情页 -->
+        <activity
+            android:name=".activity.WebViewActivity"
+            android:label="@string/manifest_wechat_web" />
+
+        <!-- 天气预报页 -->
+        <activity
+            android:name=".activity.WeatherActivity"
+            android:label="@string/nav_weather_item"
+            android:theme="@style/FullScreenNoActionBar" />
+
+        <!-- 天气预报展示页 -->
+        <activity
+            android:name=".activity.WeatherShowActivity"
+            android:theme="@style/FullScreenNoActionBar" />
+
+        <service
+            android:name=".service.WeatherService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".service.AlarmService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".service.TestService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <!-- 简单视频测试页 -->
+        <activity
+            android:name=".test.SimpleVideoActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreenNoActionBar" />
+
+        <!-- 列表视频测试页 -->
+        <activity
+            android:name=".test.ListVideoActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreenNoActionBar" />
+
+        <!-- 大图浏览页 -->
+        <activity
+            android:name=".activity.PhotoViewActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <!-- 友盟配置 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5b3e02eef29d986fda00001b" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" />
+    </application>
+
+</manifest>

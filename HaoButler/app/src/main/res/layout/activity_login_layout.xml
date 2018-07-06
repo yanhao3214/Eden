@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_logo_login"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/iv_imooc_logo"
+        app:civ_border_color="@color/lightBlue"
+        app:civ_border_width="1dp" />
+
+    <EditText
+        android:id="@+id/edt_username_login"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_edit_selector"
+        android:gravity="center_vertical"
+        android:hint="@string/tv_username_login"
+        android:maxLines="1"
+        android:paddingEnd="12dp"
+        android:paddingStart="12dp"
+        android:textSize="19sp" />
+
+    <EditText
+        android:id="@+id/edt_password_login"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_edit_selector"
+        android:gravity="center_vertical"
+        android:hint="@string/tv_password_login"
+        android:inputType="textPassword"
+        android:paddingEnd="12dp"
+        android:paddingStart="12dp"
+        android:textSize="19sp" />
+
+    <CheckBox
+        android:id="@+id/checkbox_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/tv_remember_password"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/bg_button_selector"
+        android:text="@string/btn_login"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/bg_button_selector"
+        android:text="@string/btn_register"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_forget_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/tv_forget_password"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp" />
+
+</LinearLayout>

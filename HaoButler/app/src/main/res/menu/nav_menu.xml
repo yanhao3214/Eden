@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_weather"
+            android:icon="@drawable/ic_weather_nav"
+            android:title="@string/nav_weather_item" />
+        <item
+            android:id="@+id/nav_courier"
+            android:icon="@drawable/ic_courier_nav"
+            android:title="@string/nav_courier_item" />
+        <item
+            android:id="@+id/nav_attribution"
+            android:icon="@drawable/ic_attribution_nav"
+            android:title="@string/nav_attribution_item" />
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/ic_friends_nav"
+            android:title="@string/nav_contact_item" />
+        <item
+            android:id="@+id/nav_joke"
+            android:icon="@drawable/ic_joke_nav"
+            android:title="@string/nav_joke_item" />
+        <item
+            android:id="@+id/nav_translate"
+            android:icon="@drawable/ic_translate_nav"
+            android:title="@string/nav_translate_item" />
+        <item
+            android:id="@+id/nav_alarm"
+            android:icon="@drawable/ic_alarm_nav"
+            android:title="@string/nav_alarm_item" />
+    </group>
+
+    <item android:title="@string/nav_others">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_set"
+                android:title="@string/nav_settings_item" />
+            <item
+                android:id="@+id/nav_test"
+                android:icon="@drawable/ic_test_nav"
+                android:title="@string/nav_test_item" />
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="viewpager_home">
+        <item>智能管家</item>>
+        <item>微信精选</item>>
+        <item>篮球部落</item>>
+        <item>个人中心</item>>
+    </string-array>
+
+    <string-array name="distribution_company">
+        <item>顺丰</item>
+        <item>申通</item>
+        <item>圆通</item>
+        <item>韵达</item>
+        <item>天天</item>
+    </string-array>
+
+    <string-array name="viewPager_title">
+        <item>学习园地</item>
+        <item>娱乐视频</item>
+        <item>小浩陪聊</item>
+        <item>微信精选</item>
+        <item>慕课教程</item>
+        <item>美图欣赏</item>
+        <item>个人中心</item>
+    </string-array>
+
+    <string-array name="banner_title">
+        <item>轮播图1</item>
+        <item>轮播图2</item>
+        <item>轮播图3</item>
+        <item>轮播图4</item>
+    </string-array>
+
+    <string-array name="tab_title">
+        <item>头条</item>
+        <item>要闻</item>
+        <item>娱乐</item>
+        <item>体育</item>
+        <item>财经</item>
+        <item>教育</item>
+        <item>科技</item>
+        <item>时尚</item>
+        <item>视频</item>
+        <item>直播</item>
+    </string-array>
+
+    <integer-array name="yh_age">
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+    </integer-array>
+
+    <string-array name="yh_goal">
+        <item>2017.11，26：Android起步，6k</item>
+        <item>2018.11，27：跳槽，15k</item>
+        <item>2020.02，28：中高级工程师，23k</item>
+        <item>2021.02，29：高级工程师，28k</item>
+        <item>2022.02，30：高级架构师，33k</item>
+        <item>2023.02，31：高级架构师，38k</item>
+        <item>2024.02：32：管理层，40k</item>
+        <item>2025.02：33：管理层，43k</item>
+        <item>2026.02：34：CTO，50k</item>
+        <item>2027.02：35：CTO，55k</item>
+    </string-array>
+
+    <string-array name="yh_deposit">
+        <item>2017.11，26：2w</item>
+        <item>2018.05，26：10w</item>
+        <item>2018.11，27：15w</item>
+        <item>2019:12: 28：30w</item>
+        <item>2020:12: 29：48w</item>
+        <item>2021:12: 30：73w</item>
+        <item>2022:12: 31：100w</item>
+        <item>2023:12: 32：140w</item>
+        <item>2024:12: 33：190w</item>
+        <item>2025:12: 34：240w</item>
+        <item>2026:12: 35：300w</item>
+    </string-array>
+</resources>
